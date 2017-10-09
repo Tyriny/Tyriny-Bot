@@ -1,4 +1,4 @@
-
+client.user.setGame('game here !')client.user.setGame('Type ~help for help')
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
@@ -15,10 +15,8 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-cmd_prefix = """~"""
 
-bot = commands.Bot(command_prefix=cmd_prefix, description=desc)
-
+client.user.setGame('Type ~help for help')
 
 
 });
@@ -35,5 +33,3 @@ client.login(process.env.BOT_TOKEN);
   if(command === "~ping") {
     message.channel.sendMessage("Pong!");
 }
-  if(command === "~help") {
-    message.author.sendMessage("~help *Sends you a list of avaliable commands*");}  
