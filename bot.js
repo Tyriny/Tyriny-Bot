@@ -1,3 +1,4 @@
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
@@ -14,9 +15,9 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-if(command === "What you want command to be") {
-    message.channel.sendMessage("What you want bot to say");
-}
+cmd_prefix = """~"""
+
+bot = commands.Bot(command_prefix=cmd_prefix, description=desc)
 
 
 
@@ -30,3 +31,9 @@ setInterval(() => {
 const port = process.env.PORT || 5000;
 
 client.login(process.env.BOT_TOKEN);
+
+  if(command === "~ping") {
+    message.channel.sendMessage("Pong!");
+}
+  if(command === "~help") {
+    message.author.sendMessage("~help *Sends you a list of avaliable commands*");}  
