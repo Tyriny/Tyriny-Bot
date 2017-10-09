@@ -6,6 +6,18 @@ const config = require("./config.json");
 client.on('ready', () => {
   client.user.setPresence({game: {name: "(replaceme)", type: 0}});
   console.log('I am ready!');
+  
+client.on("message", async message => {
+  if(message.author.bot) return;
+  if(message.content.indexOf(config.prefix) !== 0) return;
+  
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
+
+
+
+
 });
 
 
