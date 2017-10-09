@@ -14,7 +14,9 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-
+if(command === "What you want command to be") {
+    message.channel.sendMessage("What you want bot to say");
+}
 
 
 
