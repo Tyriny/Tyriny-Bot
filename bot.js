@@ -3,9 +3,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
-
+// This is how you set the game
 client.on('ready', () => {
-  client.user.setPresence({game: {name: "(replaceme)", type: 0}});
+  client.user.setPresence({game: {name: "~help for help", type: 0}});
   console.log('I am ready!');
   
 client.on("message", async message => {
@@ -16,7 +16,7 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 
-client.user.setGame('Type ~help for help')
+// This doesn't work anymore --> client.user.setGame('Type ~help for help')
 
 
 });
