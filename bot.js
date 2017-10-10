@@ -2,6 +2,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
+var fortunes = [
+    "definitely",
+    "yes",
+    "no",
+    "my sources are asleep, please try again",
+    "try again later"
+];
   
 client.on('ready', () => {
   client.user.setPresence({game: {name: "~help for commands!", type: 0}});
@@ -25,21 +32,11 @@ if(command ==="ping") {
 if(command ==="help") {
 	message.author.sendMessage("List of avaliable commands: ~ping , ~help , ~taco , ~8ball");
 }
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const config = require("./config.json");
-	
-var fortunes = [
-    "definitely"
-    "yes"
-    "no"
-    "my sources are asleep, please try again"
-    "try again later"
+
 if(command === "8ball") {
      if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
     else message.channel.sendMessage("I do not understand");
   }
-];
 });
 
 setInterval(() => {
