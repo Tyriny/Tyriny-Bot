@@ -25,7 +25,10 @@ if(command ==="ping") {
 if(command ==="help") {
 	message.author.sendMessage("List of avaliable commands: ~ping , ~help , ~taco , ~8ball");
 }
-
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const config = require("./config.json");
+	
 var fortunes = [
     "definitely"
     "yes"
