@@ -23,10 +23,7 @@ if(command ==="ping") {
 	message.channel.sendMessage('PONG!');
 }
 if(command ==="help") {
-	message.author.sendMessage("List of avaliable commands:
-				   ~ping
-				   ~help
-				   ~taco");
+	message.author.sendMessage("List of avaliable commands: ~ping , ~help , ~taco");
 });
 
 setInterval(() => {
