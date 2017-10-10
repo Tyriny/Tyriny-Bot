@@ -14,7 +14,11 @@ client.on("message", async message => {
   
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
+// PUT COMMANDS UNDER THIS
+// FORMAT:
+// if(command === "<command-name>") {
+// command code   
+// }
 
 // This doesn't work anymore --> client.user.setGame('Type ~help for help')
 
@@ -22,7 +26,12 @@ client.on("message", async message => {
    message.channel.sendMessage('TACOS ARE THE BEST');
  }
   
+  if(command === "~ping") {
+    message.channel.sendMessage("Pong!");
+}
+  
 });
+  // DO NOT PUT ANY OTHER COMMANDS UNDER THIS, THE COMMANDS WON'T WORK UNDER THIS MESSAGE
 
 
 setInterval(() => {
@@ -33,6 +42,4 @@ const port = process.env.PORT || 5000;
 
 client.login(process.env.BOT_TOKEN);
 
-  if(command === "~ping") {
-    message.channel.sendMessage("Pong!");
-}
+  
