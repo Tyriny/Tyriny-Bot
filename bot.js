@@ -25,6 +25,18 @@ if(command ==="ping") {
 if(command ==="help") {
 	message.author.sendMessage("List of avaliable commands: ~ping , ~help , ~taco");
 }
+
+var fortunes = [
+    "definitely"
+    "yes"
+    "no"
+    "my sources are asleep, please try again"
+    "try again later"
+if(command === "8ball") {
+     if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
+    else message.channel.sendMessage("I do not understand");
+  }
+];
 });
 
 setInterval(() => {
