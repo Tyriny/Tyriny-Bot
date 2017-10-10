@@ -17,7 +17,7 @@ client.on("message", async message => {
   // Looks for the prefix.
   if(message.content.indexOf(config.prefix) !== 0) return;
   
-  // Adds args variable.
+  // Adds args variable. Makes it so the command starts with '~'
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   // adds command variable.
   const command = args.shift().toLowerCase();
