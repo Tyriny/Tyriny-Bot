@@ -32,6 +32,7 @@ if(command ==="ping") {
 }
 if(command ==="help") {
 	message.author.sendMessage("List of avaliable commands: ~ping , ~help , ~taco , ~8ball");
+	message.channel.sendMessage("Sent message to you! Check your direct messages!");
 }
 
 if(command === "8ball") {
