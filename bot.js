@@ -18,7 +18,10 @@ client.on("message", async message => {
 
 // This doesn't work anymore --> client.user.setGame('Type ~help for help')
 
-
+ if(command === "tacos") {
+   message.channel.sendMessage('TACOS ARE THE BEST');
+ }
+  
 });
 
 
