@@ -7,6 +7,7 @@ var fortunes = [
     "yes",
     "no",
     "my sources are asleep, please try again",
+// Last one doesn't need comman after it.
     "try again later"
 ];
   
