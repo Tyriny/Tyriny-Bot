@@ -25,7 +25,8 @@ client.on("message", async message => {
  if(command === "tacos") {
    message.channel.sendMessage('TACOS ARE THE BEST');
  }
-  
+
+  // Don't do "~ping", just do "ping". 
   if(command === "~ping") {
     message.channel.sendMessage("Pong!");
 }
