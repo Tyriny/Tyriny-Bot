@@ -7,7 +7,7 @@ var fortunes = [
     "yes",
     "no",
     "my sources are asleep, please try again",
-// Last one doesn't need comman after it.
+// Last one doesn't need comma after it.
     "try again later"
 ];
   
@@ -31,7 +31,7 @@ if(command ==="ping") {
 	message.channel.sendMessage('PONG!');
 }
 if(command ==="help") {
-	message.author.sendMessage("List of avaliable commands: ~ping , ~help , ~taco , ~8ball");
+	message.author.sendMessage("List of available commands: ~ping , ~help , ~taco , ~8ball");
 	message.channel.sendMessage("Sent message to you! Check your direct messages!");
 }
 
