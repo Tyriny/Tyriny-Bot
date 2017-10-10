@@ -19,7 +19,9 @@ if(command === "tacos") {
 	message.channel.sendMessage('TACOS ARE THE BEST');
 }
 
-  
+if(command ==="ping") {
+	message.channel.sendMessage('PONG!');
+}
 });
 
 setInterval(() => {
