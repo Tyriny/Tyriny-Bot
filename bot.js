@@ -37,7 +37,7 @@ if(command ==="help") {
 
 if(command === "8ball") {
      if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
-    else message.channel.sendMessage("I do not understand");
+    else message.channel.sendMessage("Usage: ~8ball [question]");
   }
 });
 
