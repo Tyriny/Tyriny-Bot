@@ -24,6 +24,7 @@ if(command ==="ping") {
 }
 if(command ==="help") {
 	message.author.sendMessage("List of avaliable commands: ~ping , ~help , ~taco");
+}
 });
 
 setInterval(() => {
