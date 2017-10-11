@@ -3,12 +3,27 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 var fortunes = [
-    "definitely",
-    "yes",
-    "no",
-    "my sources are asleep, please try again",
+    ":white_check_mark: It is certain :white_check_mark: ",
+    ":white_check_mark: It is decidedly so :white_check_mark: ",
+    ":white_check_mark: Without a doubt :white_check_mark: ",
+    ":white_check_mark: You may rely on it :white_check_mark: ",
+    ":white_check_mark: Yes, definitely :white_check_mark: ",
+    ":white_check_mark: As I see it, yes :white_check_mark: ",
+    ":white_check_mark: Most likely :white_check_mark: ",
+    ":white_check_mark: Outlook good :white_check_mark: ", 
+    ":white_check_mark: Yes :white_check_mark: ",
+    ":white_check_mark: Signs point to yes :white_check_mark: ",
+    ":thinking: Reply hazy, try again :thinking: ",
+    ":thinking: Ask again later :thinking: ",
+    ":thinking: Better not tell you now :thinking: ",
+    ":thinking: Cannot predict now :thinking: ",
+    ":thinking: Concentrate and ask again :thinking: ",
+    ":x: Don't count on it :x:"
+    ":x: My reply is no :x:"
+    ":x: My sources say no :x:"
+    ":x: Outlook not so good :x:"
 // Last one doesn't need comma after it.
-    "try again later"
+    ":x: Very doubtful :x:"
 ];
   
 client.on('ready', () => {
