@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+,const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
@@ -18,12 +18,12 @@ var fortunes = [
     ":thinking: Better not tell you now :thinking: ",
     ":thinking: Cannot predict now :thinking: ",
     ":thinking: Concentrate and ask again :thinking: ",
-    ":x: Don't count on it :x:"
-    ":x: My reply is no :x:"
-    ":x: My sources say no :x:"
-    ":x: Outlook not so good :x:"
+    ":x: Don't count on it :x:",
+    ":x: My reply is no :x:",
+    ":x: My sources say no :x:",
+    ":x: Outlook not so good :x:",
 // Last one doesn't need comma after it.
-    ":x: Very doubtful :x:"
+    ":x: Very doubtful :x:",
 ];
   
 client.on('ready', () => {
