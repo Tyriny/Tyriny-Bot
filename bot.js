@@ -23,7 +23,7 @@ var fortunes = [
     ":x: My sources say no :x:",
     ":x: Outlook not so good :x:",
 // Last one doesn't need comma after it.
-    ":x: Very doubtful :x:",
+    ":x: Very doubtful :x:"
 ];
   
 client.on('ready', () => {
