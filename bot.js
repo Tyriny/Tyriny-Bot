@@ -10,7 +10,7 @@ var fortunes = [
     ":white_check_mark: Without a doubt :white_check_mark: ",
     ":white_check_mark: You may rely on it :white_check_mark: ",
     ":white_check_mark: Yes, definitely :white_check_mark: ",
- ,     ":white_check_mark: As I see it, yes :white_check_mark: ",
+    ":white_check_mark: As I see it, yes :white_check_mark: ",
     ":white_check_mark: Most likely :white_check_mark: ",
     ":white_check_mark: Outlook good :white_check_mark: ", 
     ":white_check_mark: Yes :white_check_mark: ",
@@ -63,7 +63,11 @@ if(command === "kys") {
 if(command === "suicide") {
      message.channel.sendMessage('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html')
 }
-		
+	
+if(command === "mention") {
+     message.channel.sendMessage('Hi', + mention);
+}
+	
 });
 
 setInterval(() => {
