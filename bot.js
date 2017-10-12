@@ -65,7 +65,7 @@ if(command === "suicide") {
 }
 	
 if(command === "mention") {
-	message.channel.sendMessage('HI' + mention);
+	message.channel.sendMessage('HI', + mention);
 }
 	
 });
