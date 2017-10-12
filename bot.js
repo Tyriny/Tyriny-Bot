@@ -59,7 +59,7 @@ if(command === "kys") {
 }
 
 if(command === "suicide") {
-     message.channel.sendMessage('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html
+     message.channel.sendMessage('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html')
 }
 });
 
