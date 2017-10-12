@@ -64,9 +64,6 @@ if(command === "suicide") {
      message.channel.sendMessage('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html')
 }
 	
-if(command === "mention") {
-     message.channel.sendMessage('Hi' + mention);
-}
 	
 });
 
