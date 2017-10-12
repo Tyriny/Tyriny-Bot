@@ -65,7 +65,7 @@ if(command === "suicide") {
 }
 	
 if(command === "mention") {
-	bot.reply("Hi");
+	message.reply("Hi");
 }
 	
 });
