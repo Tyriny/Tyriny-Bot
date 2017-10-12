@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
-var mention = message.mentions.members.first();
-
 var fortunes = [
     ":white_check_mark: It is certain :white_check_mark: ",
     ":white_check_mark: It is decidedly so :white_check_mark: ",
