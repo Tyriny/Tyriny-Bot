@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
+
+
 var fortunes = [
     ":white_check_mark: It is certain :white_check_mark: ",
     ":white_check_mark: It is decidedly so :white_check_mark: ",
@@ -39,7 +41,7 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
 if(command === "taco") {
-	message.channel.sendMessage('TACOS ARE THE BEST');
+	message.channel.sendMessage('TACOS ARE THE BEST YUS');
 }
 
 if(command ==="ping") {
@@ -63,7 +65,7 @@ if(command === "suicide") {
 }
 	
 if(command === "mention") {
-	message.channel.sendMessage(msg.sender.username + "Hi");
+	bot.reply(message, "Hi);
 }
 	
 });
