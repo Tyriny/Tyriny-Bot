@@ -57,7 +57,7 @@ if(command === "8ball") {
     else message.channel.sendMessage("Usage: ~8ball [question]");
   }
 if(command === "kys") {
-     message.channel.sendMessage('I am a :robot: and thus am unable to commit suicide :x: :gun:')
+     message.reply('I am a :robot: and thus am unable to commit suicide :x: :gun:')
 }
 
 if(command === "suicide") {
