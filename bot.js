@@ -10,7 +10,7 @@ var fortunes = [
     ":white_check_mark: Without a doubt :white_check_mark: ",
     ":white_check_mark: You may rely on it :white_check_mark: ",
     ":white_check_mark: Yes, definitely :white_check_mark: ",
-    ":white_check_mark: As I see it, yes :white_check_mark: ",
+ ,     ":white_check_mark: As I see it, yes :white_check_mark: ",
     ":white_check_mark: Most likely :white_check_mark: ",
     ":white_check_mark: Outlook good :white_check_mark: ", 
     ":white_check_mark: Yes :white_check_mark: ",
@@ -48,7 +48,7 @@ if(command ==="ping") {
 	message.channel.sendMessage('PONG!');
 }
 if(command ==="help") {
-	message.author.sendMessage("List of available commands: ~ping , ~help , ~taco , ~8ball");
+	message.author.sendMessage("List of available commands: ~ping , ~help , ~taco , ~8ball , ~suicide , ~kys");
 	message.channel.sendMessage("Sent message to you! Check your direct messages!");
 }
 
