@@ -82,7 +82,7 @@ if(command === "serverinfo") {
       }
 	  
 if(command === "userid") {
-       message.reply(message.author.id);
+       message.reply("Your ID is... " + message.author.id);
        message.reply(message.author.avatarURL);
      }
 });
