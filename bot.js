@@ -77,12 +77,15 @@ if(command === "serverinfo") {
         if (msg.channel.topic) {
           msgArray.push("The current topic is: " + msg.channel.topic);
         }
-        bot.sendMessage(msg, msgArray);
+        message.reply(msgArray);
       } else {
-        bot.sendMessage(msg, "You can't do that in a DM, dummy!.");
+        message.reply("You can't do that in a DM, dummy!.");
       }
     }
-  },		   
+  }
+	  
+if(command === "userid") {
+       message.reply(author.id)
 });
 
 setInterval(() => {
