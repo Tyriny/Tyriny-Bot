@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
-
+// MY DISCORD DOESN'T WORK AT SCHOOL ANYMORE, THE SCHOOL BLOCKED IT. I CAN'T GET ON DISCORD AT SCHOOL ANYMORE. SORRY! :P
 
 var fortunes = [
     ":white_check_mark: It is certain :white_check_mark: ",
