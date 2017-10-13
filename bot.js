@@ -68,8 +68,21 @@ if(command === "creators") {
      message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross')
 }
 		   
-if(command ===		   
-		   
+if(command === "serverinfo") {
+    
+        var msgArray = [];
+        msgArray.push("You are currently in " + msg.channel + " (id: " + msg.channel.id + ")");
+        msgArray.push("on server **" + msg.channel.server.name + "** (id: " + msg.channel.server.id + ") (region: " + msg.channel.server.region + ")");
+        msgArray.push("owned by " + msg.channel.server.owner + " (id: " + msg.channel.server.owner.id + ")");
+        if (msg.channel.topic) {
+          msgArray.push("The current topic is: " + msg.channel.topic);
+        }
+        bot.sendMessage(msg, msgArray);
+      } else {
+        bot.sendMessage(msg, "You can't do that in a DM, dummy!.");
+      }
+    }
+  },		   
 });
 
 setInterval(() => {
