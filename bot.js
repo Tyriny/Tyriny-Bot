@@ -64,8 +64,12 @@ if(command === "suicide") {
      message.reply('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html')
 }
 	
-
-	
+if(command === "creators") {
+     message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross
+}
+		   
+if(command ===		   
+		   
 });
 
 setInterval(() => {
