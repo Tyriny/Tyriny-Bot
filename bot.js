@@ -66,7 +66,7 @@ if(command === "suicide") {
   
 if(command === "botinfo") {
     var embed = new Discord.RichEmbed()
-      .setThumbnail(message.bot.avatarURL)
+      .setThumbnail(message.client.avatarURL)
       .addField("Creators:", "This bot was made with love \nby @Tryiny_ with help from @Zandercross12!", true)
       .addField("What this bot does", "Stuff.", true)
       .addField("Work in Progress", ":D")
