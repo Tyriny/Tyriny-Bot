@@ -64,9 +64,15 @@ if(command === "suicide") {
      message.reply('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html');
 }
 	
-if(command === "creators") {
-     message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross');
-}
+if(command === "botinfo") {
+    var embed = new Discord.RichEmbed()
+      .setThumbnail(message.client.avatarURL)
+      .addField("Creators:", "This bot was made with love \nby @Tryiny_ with help from @Zandercross12!", true)
+      .addField("What this bot does", "Stuff.")
+      .addField("Work in Progress", ":D")
+      .setColor(0x00FFFF)
+    message.channel.sendEmbed(embed);
+  }	
 
 // END ALL OF THE message.reply() WITH ';'
 if(command === "serverinfo") {
