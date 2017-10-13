@@ -68,7 +68,7 @@ if(command === "botinfo") {
     var embed = new Discord.RichEmbed()
       .setThumbnail(message.user.avatarURL)
       .addField("Creators:", "This bot was made with love \nby @Tryiny_ with help from @Zandercross12!", true)
-      .addField("What this bot does", "Stuff.")
+      .addField("What this bot does", "Stuff.", true)
       .addField("Work in Progress", ":D")
       .setColor(0x00FFFF)
     message.channel.sendEmbed(embed);
@@ -76,29 +76,8 @@ if(command === "botinfo") {
 
 // END ALL OF THE message.reply() WITH ';'
 
-if(command === "serverinfo") {
-    
-    var msgArray = [];
-    message.channel.sendMessage("You are currently in " + msg.channel + " (id: " + msg.channel.id + ")");
-    message.channel.sendMessage("on server **" + msg.channel.server.name + "** (id: " + msg.channel.server.id + ") (region " + msg channel.server.region + ")");
-    message.channel.sendMessage("owned by " + msg.channel.server.owner + " (id: " + msg.channel.server.owner.id + ")");
-    if (msg.channel.topic) {
-      message.channel.sendMessage("The current topic is: " + msg.channel.topic);
-   }
-    message.reply(msgArray);
-}
 
-//if(command === "serverinfo") {
-//    
-//    var msgArray = [];
-//    msgArray.push("You are currently in " + msg.channel + " (id: " + msg.channel.id + ")");
-//    msgArray.push("on server **" + msg.channel.server.name + "** (id: " + msg.channel.server.id + ") (region " + msg channel.server.region + ")");
-//    msgArray.push("owned by " + msg.channel.server.owner + " (id: " + msg.channel.server.owner.id + ")");
-//    if (msg.channel.topic) {
-//      msgArray.push("The current topic is: " + msg.channel.topic);
-//   }
-//    message.reply(msgArray);
-//}
+
 
     
 if(command === "userid") {
