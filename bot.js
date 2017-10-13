@@ -55,7 +55,7 @@ if(command ==="help") {
 if(command === "8ball") {
      if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
     else message.channel.sendMessage("Usage: ~8ball [question]");
-  }
+}
 if(command === "kys") {
      message.reply('I am a :robot: and thus am unable to commit suicide :x: :gun:')
 }
@@ -65,7 +65,7 @@ if(command === "suicide") {
 }
 	
 if(command === "creators") {
-     message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross
+     message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross')
 }
 		   
 if(command ===		   
