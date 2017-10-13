@@ -41,15 +41,15 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
 if(command === "taco") {
-	message.channel.sendMessage('TACOS ARE THE BEST YUS');
+  message.channel.sendMessage('TACOS ARE THE BEST YUS');
 }
 
 if(command ==="ping") {
-	message.channel.sendMessage('PONG!');
+  message.channel.sendMessage('PONG!');
 }
 if(command ==="help") {
-	message.author.sendMessage("List of available commands: ~ping , ~help , ~taco , ~8ball , ~suicide , ~kys");
-	message.channel.sendMessage("Sent message to you! Check your direct messages!");
+  message.author.sendMessage("List of available commands: ~ping , ~help , ~taco , ~8ball , ~suicide , ~kys");
+  message.channel.sendMessage("Sent message to you! Check your direct messages!");
 }
 
 if(command === "8ball") {
@@ -63,30 +63,31 @@ if(command === "kys") {
 if(command === "suicide") {
      message.reply('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html');
 }
-	
+  
 if(command === "botinfo") {
     var embed = new Discord.RichEmbed()
-      .setThumbnail(message.client.avatarURL)
+      .setThumbnail(message.bot.avatarURL)
       .addField("Creators:", "This bot was made with love \nby @Tryiny_ with help from @Zandercross12!", true)
       .addField("What this bot does", "Stuff.")
       .addField("Work in Progress", ":D")
       .setColor(0x00FFFF)
     message.channel.sendEmbed(embed);
-  }	
+  } 
 
 // END ALL OF THE message.reply() WITH ';'
 if(command === "serverinfo") {
     
-        var msgArray = [];
-        msgArray.push("You are currently in " + msg.channel + " (id: " + msg.channel.id + ")");
-        msgArray.push("on server **" + msg.channel.server.name + "** (id: " + msg.channel.server.id + ") (region: " + msg.channel.server.region + ")");
-        msgArray.push("owned by " + msg.channel.server.owner + " (id: " + msg.channel.server.owner.id + ")");
-        if (msg.channel.topic) {
-          msgArray.push("The current topic is: " + msg.channel.topic);
-        }
-        message.reply(msgArray);
-      }
-	  
+    var msgArray = [];
+    msgArray.push("You are currently in " + msg.channel + " (id: " + msg.channel.id + ")");
+    msgArray.push("on server **" + msg.channel.server.name + "** (id: " + msg.channel.server.id + ") (region " + msg channel.server.region + ")");
+    msgArray.push("owned by " + msg.channel.server.owner + " (id: " + msg.channel.server.owner.id + ")");
+    if (msg.channel.topic) {
+      msgArray.push("The current topic is: " + msg.channel.topic);
+    }
+    message.reply(msgArray);
+}
+
+    
 if(command === "userid") {
        message.reply("Your ID is... " + message.author.id);
        message.reply(message.author.avatarURL);
