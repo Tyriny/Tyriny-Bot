@@ -67,6 +67,7 @@ if(command === "suicide") {
 if(command === "creators") {
      message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross');
 }
+
 // END ALL OF THE message.reply() WITH ';'
 if(command === "serverinfo") {
     
@@ -78,8 +79,6 @@ if(command === "serverinfo") {
           msgArray.push("The current topic is: " + msg.channel.topic);
         }
         message.reply(msgArray);
-      } else {
-        message.reply("You can't do that in a DM, dummy!.");
       }
 	  
 if(command === "userid") {
