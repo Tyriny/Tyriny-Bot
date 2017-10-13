@@ -57,17 +57,17 @@ if(command === "8ball") {
     else message.channel.sendMessage("Usage: ~8ball [question]");
 }
 if(command === "kys") {
-     message.reply('I am a :robot: and thus am unable to commit suicide :x: :gun:')
+     message.reply('I am a :robot: and thus am unable to commit suicide :x: :gun:');
 }
 
 if(command === "suicide") {
-     message.reply('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html')
+     message.reply('If you are having suicidal thoughts, please consider :telephone: the suicide hotline! The number can be found here: http://suicidehotlines.com/international.html');
 }
 	
 if(command === "creators") {
-     message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross')
+     message.reply('This bot was made with love by @Tyriny_ with help from @Zandercross');
 }
-		   
+// END ALL OF THE message.reply() WITH ';'
 if(command === "serverinfo") {
     
         var msgArray = [];
