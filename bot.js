@@ -81,11 +81,10 @@ if(command === "serverinfo") {
       } else {
         message.reply("You can't do that in a DM, dummy!.");
       }
-    }
-  }
 	  
 if(command === "userid") {
        message.reply(author.id)
+     }
 });
 
 setInterval(() => {
