@@ -81,9 +81,7 @@ if(command === "botinfo") {
 if(command === "serverinfo") {
     
     var msgArray = [];
-    msgArray.push("You are currently in " + message.channel.name + ")");
-    msgArray.push("on server **" + message.server.name + ")");
-    msgArray.push("owned by " + "@Tyrinny_" + ")");
+    msgArray.push("You are currently in " + message.channel.name + "on server **" + message.server.name + "owned by " + "@Tyrinny_ ");
     message.reply(msgArray);
 }
 
