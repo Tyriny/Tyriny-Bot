@@ -77,17 +77,18 @@ if(command === "botinfo") {
 // END ALL OF THE message.reply() WITH ';'
 
 // WHEN THESE START WITH //, THE CODE WON'T RUN
-if(command === "serverinfo") {
+//PLEASE HELP, BOT DOES NOT WORK WHEN THIS CODE IS RUN
+//if(command === "serverinfo") {
     
-    var msgArray = [];
-    msgArray.push("You are currently in " + msg.channel + " (id: " + msg.channel.id + ")");
-    msgArray.push("on server **" + msg.channel.server.name + "** (id: " + msg.channel.server.id + ") (region " + msg channel.server.region + ")");
-    msgArray.push("owned by " + msg.channel.server.owner + " (id: " + msg.channel.server.owner.id + ")");
-    if (msg.channel.topic) {
-      msgArray.push("The current topic is: " + msg.channel.topic);
-   }
-    message.reply(msgArray);
-}
+    //var msgArray = [];
+    //msgArray.push("You are currently in " + msg.channel + " (id: " + msg.channel.id + ")");
+    //msgArray.push("on server **" + msg.channel.server.name + "** (id: " + msg.channel.server.id + ") (region " + msg channel.server.region + ")");
+    //msgArray.push("owned by " + msg.channel.server.owner + " (id: " + msg.channel.server.owner.id + ")");
+    //if (msg.channel.topic) {
+      //msgArray.push("The current topic is: " + msg.channel.topic);
+   //}
+    //message.reply(msgArray);
+//}
 
     
 if(command === "userid") {
