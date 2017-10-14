@@ -83,7 +83,7 @@ if(command === "serverinfo") {
     var msgArray = [];
     msgArray.push("You are currently in " + message.channel.name + ")");
     msgArray.push("on server **" + message.server.name + ")");
-    msgArray.push("owned by " + message.server.owner + ")");
+    msgArray.push("owned by " + "@Tyrinny_" + ")");
     message.reply(msgArray);
 }
 
