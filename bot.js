@@ -48,7 +48,7 @@ if(command ==="ping") {
   message.channel.sendMessage('PONG!');
 }
 if(command ==="help") {
-  message.author.sendMessage("List of available commands: ~ping , ~help , ~taco , ~8ball , ~suicide , ~kys");
+  message.author.sendMessage("List of available commands: ~ping , ~help , ~taco , ~8ball , ~suicide , ~kys , ~botinfo , ~userid");
   message.channel.sendMessage("Sent message to you! Check your direct messages!");
 }
 
