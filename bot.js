@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
-// MY DISCORD DOESN'T WORK AT SCHOOL ANYMORE, THE SCHOOL BLOCKED IT. I CAN'T GET ON DISCORD AT SCHOOL ANYMORE. SORRY! :P
+// QUESTION TO TYIRINNY: IS THERE ANOTHER WAY TO TALK TO YOU???? Other than Discord.
 
 var fortunes = [
     ":white_check_mark: It is certain :white_check_mark: ",
@@ -76,8 +76,7 @@ if(command === "botinfo") {
 
 // END ALL OF THE message.reply() WITH ';'
 
-age.reply(msgArray);
-//}
+
     
 if(command === "userid") {
        message.reply("Your ID is... " + message.author.id);
